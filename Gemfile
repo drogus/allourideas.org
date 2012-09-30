@@ -1,7 +1,5 @@
 source :rubygems
-source "http://gems.github.com"
 
-gem "bundler", "1.1.5"
 gem "rails", "2.3.14"
 gem "multi_json", "1.0.4"
 gem "json", "1.1.3"
@@ -19,8 +17,8 @@ gem "has_scope",  "0.4.2"
 gem "responders",  "0.4.8"
 gem "thoughtbot-clearance", "0.8.2", :require => "clearance"
 gem "fastercsv", "1.5.1"
-gem "redis-store", "0.3.9"
-gem "redis", "1.0.7"
+gem "redis-store", "~> 1.0.0"
+gem "redis"
 gem "will_paginate", "2.3.14"
 gem "geoip_city", "0.2.0"
 gem "geokit", "1.5.0"
