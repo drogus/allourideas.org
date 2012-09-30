@@ -30,10 +30,10 @@ describe Visitor do
 		  Visitor.level_score(:votes => e[0], :ideas => e[1]).should be_close(e[2], 0.05)
 	  end
   end
-  
+
   it "should return level messages accurately" do
-          Visitor.leveling_message(:votes => 0, :ideas => 1).should == "Now you have cast 0 votes and added 1 idea: terrible"
-          Visitor.leveling_message(:votes => 1, :ideas => 1).should == "Now you have cast 1 vote and added 1 idea: pathetic"
-          Visitor.leveling_message(:votes => 2, :ideas => 2).should == "Now you have cast 2 votes and added 2 ideas: lame"
+          Visitor.leveling_message(:votes => 0, :ideas => 1).should == "Now you have cast 0 votes and added 1 idea: good"
+          Visitor.leveling_message(:votes => 1, :ideas => 1).should == "Now you have cast 1 vote and added 1 idea: nice"
+          Visitor.leveling_message(:votes => 2, :ideas => 2).should == "Now you have cast 2 votes and added 2 ideas: amazing"
   end
 end
